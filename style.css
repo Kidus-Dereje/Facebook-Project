@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mukta:wght@500&family=Oswald&family=Poppins:wght@200;300&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+/*Common Code*/
+header, .left-elements, .middle-elements, .right-elements, nav{
+    display: flex;
+}
+li{
+    list-style-type: none;
+}
+.header-logo-icon,.header-prof{
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+}
+span{
+    font-weight: bold;
+}
+/*Header Code*/
+header{
+    width: 100%;
+    height: 7.5vh;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgb(199, 197, 197);
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    justify-content: space-between;
+}
+.left-elements{
+    width: 22%;
+    align-items: center;
+}
+.header-logo-icon{
+    margin-inline: 7px;
+    background-image: url(https://www.facebook.com/images/fb_icon_325x325.png);
+    background-position: center;
+    background-size: cover;
+}
+.header-prof{
+    background-image: url(https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-squares-01/3/30-512.png);
+    background-position: center;
+    background-size: cover;
+}
+.header-search-bar .bx-search{
+    padding-inline: 3px;
+    color: rgba(0, 0, 0, 0.623);
+}
+.middle-elements{
+    width: 42.5%;
+}
+.middle-elements nav{
+    width: 100%;
+    align-items: center;
+}
+.middle-elements li{
+    font-size: 25px;
+}
+.middle-elements nav ul{
+    width: 115px;
+    height: 95%;
+    text-align: center;
+}
+.middle-elements li{
+    margin-top: 13.5px;
+    height: 34px;
+}
+.blue-home{
+    border-bottom: 3px solid #0b81ec;
+}
+.right-elements{
+    width: 22%;
+    align-items: center;
+}
+.right-elements nav{
+    margin-left: 120px;
+}
+.right-elements li{
+    margin-right: 5px;
+    background-color: whitesmoke;
+    box-shadow: inset 0px 0px 50px 10px rgba(236, 235, 235, 0.664);
+    font-size: 25px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.header-search-bar{
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding-left: 4px;
+    background-color: whitesmoke;
+    box-shadow: inset 0px 0px 20px 0px rgb(241, 239, 239);
+}
+.header-search-bar input{
+    height: 2rem;
+    width: 13rem;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background-color: transparent;
+}
+
+/*main content code*/
+.bxs-edit{
+    font-size: 22px;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 40px 2px rgba(143, 141, 141, 0.808);
+}
+main{
+    margin-top: 8vh;
+    width: 100%;
+    height: 92vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+.left-container{
+    width: 22%;
+    height: 91.3vh;
+    position: fixed;
+    top: 8.1vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.left-container-elements{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    width:17.5rem;
+}
+.left-container-elements-top{
+    margin-top: 10px;
+}
+.left-container-prof-image{
+    width: 2.0rem;
+    height: 2.0rem;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-image: url(https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-squares-01/3/30-512.png);
+    background-position: center;
+    background-size: cover;
+}
+.left-container-elements i{
+    font-size: 30px;
+    margin-left: 15px;
+}
+.left-container-elements p{
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 13px;
+}
+.left-container-elements .bx-chevron-down{
+    border-radius: 50%;
+    background-color: whitesmoke;
+    box-shadow: inset 0px 0px 20px 0px rgb(206, 201, 201);
+}
+.middle-container{
+    width: 43.5%;
+    height: 91.3vh;
+    position: fixed;
+    top: 8.1vh;
+    right: 27.5%;
+    &::-webkit-scrollbar{
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb{
+        width: 0px;
+    }
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0px 5px;
+}
+.story-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 15rem;
+    gap: 5px;
+    margin-top: 20px;
+    position: relative;
+}
+.story-grid .bx-chevron-right{
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 10;
+    position: absolute;
+    top: 45%;
+    left: 92%;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.795);
+    color: rgba(0, 0, 0, 0.664);
+}
+.sgrid{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px rgb(199, 197, 197);
+    background-color: white;
+}
+.sgrid-1{
+    position: relative;
+}
+.sgrid-1 p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 23px;
+}
+.bxs-plus-circle{
+    font-size: 37px;
+    position: absolute;
+    top: 10.8rem;
+    left: 3.2rem;
+    border-radius: 50%;
+    background-color: white;
+}
+.sgrid-1-img{
+    height: 80%;
+    background-image: url(https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-squares-01/3/30-512.png);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+.sgrid-2,.sgrid-3,.sgrid-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(https://yt3.googleusercontent.com/ytc/APkrFKaPB624guryQ5HeKlQiRJqUSkLKzWIAvCd4dDUEVw=s900-c-k-c0x00ffffff-no-rj);
+    background-position: center;
+    background-size: cover;
+}
+.sgrid-prof-img{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background-image: url(https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-squares-01/3/30-512.png);
+    background-size: cover;
+    background-position: center;
+    border: 3px solid blue;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.sgrid-prof-name{
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: white;
+}
+.sgrid-prof-name p{
+    font-size: 13px;
+    font-weight: bold;
+}
+.middle-text-img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-image: url(https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-squares-01/3/30-512.png);
+    background-size: cover;
+    background-position: center;
+}
+.middle-container-text{
+    height: 6.5rem;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 2px rgb(199, 197, 197);
+}
+.middle-container-top,.middle-container-bottom,.middle-live,.middle-video,.middle-feeling{
+    display: flex;
+    align-items: center;
+}
+.middle-container-text i{
+    font-size: 25px;
+}
+.middle-container-top,.middle-container-bottom{
+    height: 50%;
+    width: 95%;
+    margin-inline: auto;
+}
+.middle-container-top{
+    border-bottom: 1px solid rgba(196, 190, 190, 0.884);
+}
+.middle-container-top form{
+    margin-left: 15px;
+    width: 90%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border-radius: 40px;
+    background-color: whitesmoke;
+}
+.middle-container-top input{
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background-color: transparent;
+}
+.middle-bottom-content{
+    width: 32%;
+    padding-left: 25px;
+}
+.middle-bottom-content i{
+    margin-right: 5px;
+}
+.middle-bottom-content p{
+    font-size: 13px;
+}
+.middle-container-main-content{
+    margin-top: 20px;
+    background-color: white;
+    height: 40rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px rgb(199, 197, 197);
+}
+.main-left .main-prof{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-image: url(https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-squares-01/3/30-512.png);
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+}
+.main-content-top{
+    width: 95%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+.main-content-top p{
+    font-size: 13px;
+    margin-right: 2px;
+}
+.main-caption p{
+    width: 95%;
+    margin-inline: auto;
+    padding: 5px 0px;
+    font-size: 13px;
+}
+.main-right i{
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.658);
+}
+.main-left{
+    display: flex;
+    align-items: center;
+}
+.main-det{
+    display: flex;
+}
+.main-content-img{
+    height: 34.6rem;
+    background-color: grey;
+    margin-top: 5px;
+}
+.right-container{
+    width: 23%;
+    height: 91.3vh;
+    position: fixed;
+    top: 8.1vh;
+    right: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &::-webkit-scrollbar{
+        background-color: white;
+        width: 8px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: rgb(104, 98, 98);
+        border-radius: 15px;
+    }
+}
+.birthday-text{
+    padding: 5px 0px;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.568);
+}
+.birthday-list{
+    display: flex;
+    align-items: center;
+    width: 19.5rem;
+    padding: 5px 0px;
+    padding-right: 15px;
+    border-bottom: 1px solid rgba(196, 190, 190, 0.884);;
+}
+.birthday-list i{
+    font-size: 30px;
+    margin-inline: 5px;
+}
+.birthday-list p{
+    font-size: 13px;
+}
+.contacts-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    background-color: whitesmoke;
+}
+.contacts-header p{
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.568);
+}
+.contacts-header i{
+    padding-inline: 5px
+}
+.contacts-list{
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+}
+.contacts-list p{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.568);
+}
+.contacts-prof-image{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-image: url(https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-squares-01/3/30-512.png);
+    background-position: center;
+    background-size: cover;
+}
+.contacts-icon{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.658);
+}
